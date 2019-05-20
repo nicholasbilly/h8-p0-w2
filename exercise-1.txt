@@ -1,0 +1,52 @@
+1.  	STORE "massa" with 600
+	STORE "percepatan" with 2
+	STORE "gaya" without any value
+
+	CALCULATE "massa" times "percepatan"
+	SET "gaya" value with calculation results
+
+	DISPLAY "gaya"
+
+
+
+2.	STORE "tahun" with any number
+	CALCULATE "tahun" mod 4
+	SET "a" to the result of calculation
+	
+	IF "a" equals to 0
+	  CALCULATE "a" mod 100
+	  SET "b" to the result of calculation
+	ELSE 
+	  DISPLAY "bukan kabisat"
+
+	IF "b" equals to 0
+	  CALCULATE "b" mod 400
+	  SET "c" to the result of calculation
+	ELSE
+	  DISPLAY "kabisat"
+
+	IF "c" equals to 0
+	  DISPLAY "kabisat"
+	ELSE
+	  DISPLAY "bukan kabisat"
+
+
+3.	STORE "pakaian" with 20
+
+	FOR "pakaian" not equals to 0
+	  MINUS "pakaian" with 1
+
+	DISPLAY "mesin cuci nyala"
+
+
+4.	STORE "murid" with 40
+	STORE "kuku panjang" with true
+	
+	FOR "murid" not equals to 0
+	  IF "kuku panjang"
+	    DISPLAY "hukum"
+	    MINUS "murid" with 1
+	  ELSE
+	    DISPLAY "puji"
+	    MINUS "murid" with 1
+	
